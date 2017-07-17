@@ -119,9 +119,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="sql-512.ico" />
   </ItemGroup>
   <ItemGroup>
