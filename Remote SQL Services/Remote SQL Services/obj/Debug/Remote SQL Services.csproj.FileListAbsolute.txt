@@ -1,0 +1,14 @@
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\bin\Debug\Remote SQL Services.exe.config
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\bin\Debug\Remote SQL Services.exe
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\bin\Debug\Remote SQL Services.pdb
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\Remote SQL Services.csprojResolveAssemblyReference.cache
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\MainWindow.g.cs
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\App.g.cs
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\Remote SQL Services_MarkupCompile.cache
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\Remote SQL Services_MarkupCompile.lref
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\MainWindow.baml
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\Remote SQL Services.g.resources
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\Remote_SQL_Services.Properties.Resources.resources
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\Remote SQL Services.csproj.GenerateResource.Cache
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\Remote SQL Services.exe
+D:\C#\Remote SQL Services\Remote SQL Services\Remote SQL Services\obj\Debug\Remote SQL Services.pdb
