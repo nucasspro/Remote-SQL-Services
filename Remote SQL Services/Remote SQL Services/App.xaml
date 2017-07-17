@@ -4,6 +4,5 @@
              xmlns:local="clr-namespace:Remote_SQL_Services"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
     </Application.Resources>
 </Application>

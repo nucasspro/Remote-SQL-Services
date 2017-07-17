@@ -7,10 +7,8 @@
         mc:Ignorable="d"
         Title="Remote SQL Services" Height="151.316" Width="505.263" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <Button x:Name="button" Content="Turn on services" HorizontalAlignment="Left" Margin="78,34,0,0" VerticalAlignment="Top" Width="139"/>
-        <Button x:Name="button_Copy" Content="Turn off services" HorizontalAlignment="Left" Margin="281,34,0,0" VerticalAlignment="Top" Width="139"/>
-        <Label x:Name="label" Content="Create by Nucasspro" HorizontalAlignment="Center" Margin="197,0,180,24" VerticalAlignment="Bottom"/>
-
-
+        <Button x:Name="btnTurnOn" Content="Turn on services" HorizontalAlignment="Left" Margin="78,34,0,0" VerticalAlignment="Top" Width="139" Click="btnTurnOn_Click" />
+        <Button x:Name="btn_TurnOff" Content="Turn off services" HorizontalAlignment="Left" Margin="281,34,0,0" VerticalAlignment="Top" Width="139" Click="btn_TurnOff_Click" />
+        <Label x:Name="lblMadeBy" Content="Create by Nucasspro" HorizontalAlignment="Center" Margin="191,0,137,24" VerticalAlignment="Bottom" Width="171" />
     </Grid>
 </Window>
