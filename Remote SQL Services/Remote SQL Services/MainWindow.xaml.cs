@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.ServiceProcess;
 using System.Windows;
 using System.Windows.Forms;
@@ -26,7 +27,12 @@ namespace Remote_SQL_Services
         {
             foreach (var item in list)
             {
-                TurnOn(item);
+                if (ServiceExists(item) == true)
+                {
+                    TurnOn(item);
+                }
+                else
+                    continue;
             }
             Notification("All SQL Services has been started!");
         }
@@ -35,7 +41,12 @@ namespace Remote_SQL_Services
         {
             foreach (var item in list)
             {
-                TurnOff(item);
+                if (ServiceExists(item))
+                {
+                    TurnOff(item);
+                }
+                else
+                    continue;
             }
             Notification("All SQL Services has been stopped!");
         }
@@ -46,6 +57,9 @@ namespace Remote_SQL_Services
 
         private void Load()
         {
+            list.Add("aaaaa");
+            list.Add("MSSQLServerADHelper100");
+            list.Add("MSSQL$SQLEXPRESS");
             list.Add("MSSQLFDLauncher");
             list.Add("MSSQLSERVER");
             list.Add("SQLSERVERAGENT");
@@ -65,24 +79,43 @@ namespace Remote_SQL_Services
 
         private void TurnOff(string service_name)
         {
-            ServiceController services = new ServiceController(service_name);
-            if (services.Status == ServiceControllerStatus.Stopped)
+            try
             {
-                return;
+                ServiceController services = new ServiceController(service_name);
+                if (services.Status == ServiceControllerStatus.Stopped)
+                {
+                    return;
+                }
+                services.Stop();
+                services.WaitForStatus(ServiceControllerStatus.Stopped);
             }
-            services.Stop();
-            services.WaitForStatus(ServiceControllerStatus.Stopped);
+            catch (System.Exception e)
+            {
+                System.Windows.MessageBox.Show(e.Message);
+            }
         }
 
         private void TurnOn(string service_name)
         {
-            ServiceController services = new ServiceController(service_name);
-            if (services.Status == ServiceControllerStatus.Running)
+            try
             {
-                return;
+                ServiceController services = new ServiceController(service_name);
+                if (services.Status == ServiceControllerStatus.Running)
+                {
+                    return;
+                }
+                services.Start();
+                services.WaitForStatus(ServiceControllerStatus.Running);
             }
-            services.Start();
-            services.WaitForStatus(ServiceControllerStatus.Running);
+            catch (System.Exception e)
+            {
+                System.Windows.MessageBox.Show(e.Message);
+            }
+        }
+
+        private bool ServiceExists(string ServiceName)
+        {
+            return ServiceController.GetServices().Any(serviceController => serviceController.ServiceName.Equals(ServiceName));
         }
 
         private void Notification(string message)

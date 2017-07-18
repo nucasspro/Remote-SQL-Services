@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Remote_SQL_Services"
         mc:Ignorable="d"
-        Title="Remote SQL Services" Height="151.316" Width="505.263" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Remote SQL Server Services" Height="131.407" Width="505.263" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <Button x:Name="btnTurnOn" Content="Turn on services" HorizontalAlignment="Left" Margin="78,34,0,0" VerticalAlignment="Top" Width="139" Click="btnTurnOn_Click" />
-        <Button x:Name="btn_TurnOff" Content="Turn off services" HorizontalAlignment="Left" Margin="281,34,0,0" VerticalAlignment="Top" Width="139" Click="btn_TurnOff_Click" />
-        <Label x:Name="lblMadeBy" Content="Create by Nucasspro" HorizontalAlignment="Center" Margin="191,0,137,24" VerticalAlignment="Bottom" Width="171" />
+        <Button x:Name="btnTurnOn" Content="Start all services" HorizontalAlignment="Left" Margin="78,34,0,0" VerticalAlignment="Top" Width="139" Click="btnTurnOn_Click" />
+        <Button x:Name="btn_TurnOff" Content="Stop all services" HorizontalAlignment="Left" Margin="281,34,0,0" VerticalAlignment="Top" Width="139" Click="btn_TurnOff_Click" />
+        <Label x:Name="lblMadeBy" Content="Nucasspro" HorizontalAlignment="Center" Margin="215,0,217,10" VerticalAlignment="Bottom" Width="67" />
     </Grid>
 </Window>
